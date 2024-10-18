@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Typography, Input, Button } from "@material-tailwind/react";
 import { EyeSlashIcon, EyeIcon } from "@heroicons/react/24/solid";
 import { Link, useNavigate } from "react-router-dom";
-import NavBar from "../../components/Navbar/Navbar";
+import NavBar from "../../components/NavBar/NavBar";
 import { validateEmail } from "../../utiles/helper";
 import axiosInstance from "../../utiles/axiosintances";
 
@@ -148,30 +148,7 @@ const Login = () => {
             >
               sign in
             </Button>
-            <div className="!mt-4 flex justify-end">
-              <Typography
-                as="a"
-                href="#"
-                color="blue-gray"
-                variant="small"
-                className="font-medium"
-              >
-                Forgot password
-              </Typography>
-            </div>
-            <Button
-              variant="outlined"
-              size="lg"
-              className="mt-6 flex h-12 items-center justify-center gap-2"
-              fullWidth
-            >
-              <img
-                src={`https://www.material-tailwind.com/logos/logo-google.png`}
-                alt="google"
-                className="h-6 w-6"
-              />{" "}
-              sign in with google
-            </Button>
+
             <Typography
               variant="small"
               color="gray"

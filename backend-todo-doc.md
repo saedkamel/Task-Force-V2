@@ -12,7 +12,7 @@ This project is a RESTful API built with Node.js, Express, and MongoDB, designed
 - MongoDB
 - A `.env` file with the following variables:
   - `ACCESS_TOKEN_SECRET` (JWT secret for signing tokens)
-  - `connectionString` (MongoDB connection string)
+  - `connect` (MongoDB connection string)
 
 ### Installation Steps:
 

@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { Link, useNavigate } from "react-router-dom";
-import NavBar from "../../components/Navbar/Navbar";
+import NavBar from "../../components/NavBar/NavBar";
 import { validateEmail } from "../../utiles/helper";
 import axiosInstance from "../../utiles/axiosintances";
 
