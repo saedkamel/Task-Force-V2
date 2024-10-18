@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import NavBar from "../../components/Navbar/NavBar.jsx";
+import NavBar from "../../components/NavBar/NavBar.jsx";
 import moment from "moment";
 import NoteCard from "../../components/Cards/NoteCard.jsx";
 import { MdAdd } from "react-icons/md";
