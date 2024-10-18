@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Typography, Input, Button } from "@material-tailwind/react";
 import { EyeSlashIcon, EyeIcon } from "@heroicons/react/24/solid";
 import { Link, useNavigate } from "react-router-dom";
-import NavBar from "../../components/Navbar/Navbar";
+import NavBar from "../../components/NavBar/NavBar";
 import { validateEmail } from "../../utiles/helper";
 import axiosInstance from "../../utiles/axiosintances";
 
