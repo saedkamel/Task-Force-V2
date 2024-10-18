@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import NavBar from "../../components/Navbar/Navbar";
+import NavBar from "../../components/Navbar/NavBar.jsx";
 import moment from "moment";
-import NoteCard from "../../components/Cards/NoteCard";
+import NoteCard from "../../components/Cards/NoteCard.jsx";
 import { MdAdd } from "react-icons/md";
-import AddEditNote from "./AddEditNote";
+import AddEditNote from "./AddEditNote.jsx";
 import Modal from "react-modal";
-import axiosInstance from "../../utiles/axiosintances";
+import axiosInstance from "../../utiles/axiosintances.js";
 
 <md></md>;
 const Home = () => {
