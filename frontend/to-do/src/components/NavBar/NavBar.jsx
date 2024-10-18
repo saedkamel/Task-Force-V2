@@ -44,43 +44,8 @@ const NavBar = ({ userInfo }) => {
         >
           Task Management App.
         </Typography>
-        <div className="hidden lg:block">
-          <Searchbar
-            value={searchQuery}
-            onChange={({ target }) => {
-              setSearchQuery(target.value);
-            }}
-            handleSearch={handleSearch}
-            onClearSearch={onClearSearch}
-          />
-        </div>
-        <div className="hidden gap-2 lg:flex">
-          <ProfileInfo onLogout={onLogout} />
-          <Button variant="gradient" size="sm">
-            Sign Up
-          </Button>
-        </div>
-        <IconButton
-          variant="text"
-          color="blue-gray"
-          className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </IconButton>
+        {userInfo ? <ProfileInfo onLogout={onLogout} /> : ""}
       </div>
-      <Collapse open={openNav}>
-        <div className="flex w-72 flex-nowrap items-center gap-2 lg:hidden">
-          <Button variant="gradient" size="sm" fullWidth>
-            Sign In
-          </Button>
-          <ProfileInfo userInfo={userInfo} onLogout={onLogout} />
-        </div>
-      </Collapse>
     </Navbar>
   );
 };

@@ -4,9 +4,14 @@ import { getInitials } from "../../utiles/helper";
 const ProfileInfo = ({ userInfo, onLogout }) => {
   return (
     <div className="flex items-center gap-3">
-      <div className="w-12 h-12 flex items-center justify-center rounded-full text-gray-200 font-medium bg-gray-700">
-        {getInitials(userInfo?.fullName)}
-      </div>
+      {userInfo ? (
+        <div className="w-12 h-12 flex items-center justify-center rounded-full text-gray-200 font-medium bg-gray-700">
+          {getInitials(userInfo?.fullName)}
+        </div>
+      ) : (
+        ""
+      )}
+
       <div>
         <p className="text-sm font-medium">{userInfo?.fullName}</p>
         <button
@@ -14,6 +19,7 @@ const ProfileInfo = ({ userInfo, onLogout }) => {
           onClick={onLogout}
         >
           Logout
+          {userInfo && "Logout"}
         </button>
       </div>
     </div>
